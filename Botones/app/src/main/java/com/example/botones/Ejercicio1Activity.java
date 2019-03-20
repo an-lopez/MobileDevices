@@ -23,7 +23,6 @@ public class Ejercicio1Activity extends AppCompatActivity {
         });
 
         mp = MediaPlayer.create(Ejercicio1Activity.this, R.raw.sws);
-        mp.start();
     }
 
     public void onDestroy() {
