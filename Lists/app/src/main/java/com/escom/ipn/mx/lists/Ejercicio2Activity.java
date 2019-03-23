@@ -14,6 +14,8 @@ public class Ejercicio2Activity extends ListActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_ejercicio2);
+        ListAdapter lla = crearAdapter();
+        setListAdapter(lla);
     }
 
     protected ListAdapter crearAdapter(){

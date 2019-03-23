@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".Ejercicio2Activity">
 
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
