@@ -27,6 +27,7 @@ public class Ejercicio1Activity extends AppCompatActivity {
 
         al = (ArrayList<ListaEntrada>) bundle.getSerializable("lista");
 
+
         lv = (ListView) findViewById(R.id.lv_theme);
         lv.setAdapter(new ListaAdapter(al, R.layout.activity_ejercicio1, this) {
             @Override

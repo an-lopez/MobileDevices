@@ -15,9 +15,9 @@ public class Ejercicicio2AActivity extends AppCompatActivity {
         tv_res = findViewById(R.id.tv_res);
 
         Bundle bundle = getIntent().getExtras();
-        int a = bundle.getInt("a");
-        int b = bundle.getInt("b");
-        int c = bundle.getInt("c");
+        double a = bundle.getDouble("a");
+        double b = bundle.getDouble("b");
+        double c = bundle.getDouble("c");
 
         System.out.println(a);
         System.out.println(b);
@@ -26,16 +26,30 @@ public class Ejercicicio2AActivity extends AppCompatActivity {
         tv_res.setText(resolve(a, b, c));
     }
 
-    private String resolve(int a, int b, int c) {
-        double tempa = (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
-        double tempb = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
-        if (Double.isNaN(tempa) && !Double.isNaN(tempb)) {
-            return tempb + "";
-        } else if (!Double.isNaN(tempa) && Double.isNaN(tempb)) {
-            return tempa + "";
-        } else if (Double.isNaN(tempa) && Double.isNaN(tempb)) {
-            return "No tiene raíz";
+    private String resolve(double a, double b, double c) {
+        double raiz1;
+        double raiz2;
+
+        if (a == 0) {
+            raiz1 = -c / b;
+            return "x = " + String.format("%.02f", raiz1);
+        } else {
+
+            double interior = Math.pow(b, 2) - 4 * a * c;
+            if (interior < 0) {
+                interior *= -1;
+                interior = Math.sqrt(interior) / (2 * a);
+                b = -b / (2 * a);
+
+                return "x = "+b + " + " + String.format("%.02f", interior) + "i \n x = " + b + " - " + String.format("%.02f", interior) + "i";
+            } else {
+                raiz1 = (-b + Math.sqrt(interior)) / (2 * a);
+                raiz2 = (-b - Math.sqrt(interior)) / (2 * a);
+
+                if(raiz1 == raiz2)
+                    return "x = "+String.format("%.02f", raiz1);
+                return "x = " + String.format("%.02f", raiz1) + "\nx = "+String.format("%.02f", raiz2);
+            }
         }
-        return tempa + " o " + tempb;
     }
 }

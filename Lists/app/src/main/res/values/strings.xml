@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Lists</string>
+    <string name="app_name">ListView y Lists</string>
+    <string name="title_activity_ejercicio3">Ejercicio3Activity</string>
+    <string name="lista">Ejemplo de Lista</string>
 </resources>

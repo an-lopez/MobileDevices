@@ -39,12 +39,12 @@ public abstract class ListaAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if(convertView == null){
-            LayoutInflater layoutInflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = layoutInflater.inflate(R_layout_IdView, null);
+            convertView = LayoutInflater.from(c).inflate(R.layout.list_item, parent, false);
         }
         onEntry(al.get(position), convertView);
         return convertView;
     }
 
     public abstract void onEntry(Object object, View view);
+
 }

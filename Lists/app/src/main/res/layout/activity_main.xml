@@ -8,13 +8,46 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btn_animales"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Pushale pls"
+        android:text="Animales"
         android:onClick="chargeList"/>
+
+    <Button
+        android:id="@+id/btn_frutas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/btn_animales"
+        android:text="Frutas"
+        android:onClick="chargeList2"/>
+
+    <Button
+        android:id="@+id/btn_ejercicio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ejercicio 2"
+        android:textSize="20dp"
+        android:layout_above="@+id/btn_animales"
+        android:onClick="ejercicio2"/>
+
+    <Button
+        android:id="@+id/btn_ejercicio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 1"
+        android:gravity="center"
+        android:layout_above="@id/btn_ejercicio2"
+        android:textSize="20dp"
+        android:onClick="ejercicio1"/>
 
 </RelativeLayout>

@@ -22,14 +22,14 @@ public class Ejercicio2Activity extends AppCompatActivity {
     }
 
     public void send(View view){
-        int a = Integer.parseInt(String.valueOf(etA.getText()));
-        int b = Integer.parseInt(String.valueOf(etB.getText()));
-        int c = Integer.parseInt(String.valueOf(etC.getText()));
+        double a = Double.parseDouble(String.valueOf(etA.getText()));
+        double b = Double.parseDouble(String.valueOf(etB.getText()));
+        double c = Double.parseDouble(String.valueOf(etC.getText()));
 
         Bundle bundle = new Bundle();
-        bundle.putInt("a", a);
-        bundle.putInt("b", b);
-        bundle.putInt("c", c);
+        bundle.putDouble("a", a);
+        bundle.putDouble("b", b);
+        bundle.putDouble("c", c);
 
         Intent intent = new Intent(this, Ejercicicio2AActivity.class);
         intent.putExtras(bundle);
