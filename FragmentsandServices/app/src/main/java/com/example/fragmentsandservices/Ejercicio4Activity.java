@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class Ejercicio4Activity extends AppCompatActivity {
     private TextView jtv;
     private Button jbn;
+    private Button jbn2;
     private boolean count;
 
     @Override
@@ -20,6 +21,7 @@ public class Ejercicio4Activity extends AppCompatActivity {
         jtv = (TextView) findViewById(R.id.xtvT);
 
         jbn = (Button) findViewById(R.id.xbnI);
+        jbn2 = findViewById(R.id.btn_pause);
 
         jbn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -46,8 +48,9 @@ public class Ejercicio4Activity extends AppCompatActivity {
     private void initCrono() {
         stopCrono();
         Intent in = new Intent(this, MiCrono.class);
-        startService(in);
         count = true;
+        refreshCrono(0);
+        startService(in);
     }
 
     private void stopCrono() {
@@ -62,12 +65,14 @@ public class Ejercicio4Activity extends AppCompatActivity {
     }
 
     public void pauseCrono(View view) {
-        count = false;
+        count = !count;
+        if(count){
+            jbn2.setText("Pause");
+        }else{
+            jbn2.setText("Resume");
+        }
     }
 
-    public void resumeCrono(View view) {
-        count = true;
-    }
 
     public boolean isCount() {
         return count;

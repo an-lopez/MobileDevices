@@ -21,19 +21,14 @@
         android:id="@+id/xbnI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Iniciar" />
+        android:text="Iniciar"/>
 
     <Button
+        android:id="@+id/btn_pause"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Pause"
         android:onClick="pauseCrono"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="resumeCrono"
-        android:text="Resume" />
 
     <Button
         android:id="@+id/xbnT"
