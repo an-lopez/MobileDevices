@@ -1,0 +1,4 @@
+#Mon Mar 25 10:09:34 CST 2019
+base.0=/home/durazno/AndroidStudioProjects/MobileDevices/FragmentsandServices/app/build/intermediates/transforms/dexMerger/debug/3
+path.0=classes.dex
+renamed.0=classes.dex
