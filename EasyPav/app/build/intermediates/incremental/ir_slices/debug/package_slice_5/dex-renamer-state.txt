@@ -1,4 +1,4 @@
-#Sun Mar 31 13:35:59 CST 2019
-base.0=/home/durazno/AndroidStudioProjects/EasyPav/app/build/intermediates/transforms/dexMerger/debug/5
+#Tue Apr 02 11:29:08 CST 2019
+base.0=/home/durazno/AndroidStudioProjects/MobileDevices/EasyPav/app/build/intermediates/transforms/dexMerger/debug/5
 path.0=classes.dex
 renamed.0=classes.dex
