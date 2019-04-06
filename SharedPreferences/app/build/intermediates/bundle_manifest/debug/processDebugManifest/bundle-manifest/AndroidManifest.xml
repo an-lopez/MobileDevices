@@ -24,6 +24,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.escom.ipn.mx.sharedpreferences.Ejercicio4Activity" />
         <activity android:name="com.escom.ipn.mx.sharedpreferences.Ejercicio3AActivity" />
         <activity android:name="com.escom.ipn.mx.sharedpreferences.Ejercicio3Activity" />
         <activity android:name="com.escom.ipn.mx.sharedpreferences.Ejercicio2AActivity" />

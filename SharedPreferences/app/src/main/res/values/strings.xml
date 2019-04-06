@@ -12,4 +12,6 @@
     <string name="pref_key_name">name</string>
     <string name="pref_key_lastname">lastname</string>
     <string name="pref_key_img">img</string>
+    <string name="hint_id">i.e. 1</string>
+    <string name="hint_nombre">i.e. Principe de Asturias</string>
 </resources>

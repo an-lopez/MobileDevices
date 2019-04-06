@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ejercicio4Activity">
+
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingLeft="4dp"
+        android:layout_alignParentLeft="true"
+        android:ems="4"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="ID: "/>
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:hint="@string/hint_id"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@+id/tv_id"/>
+
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_id"
+        android:paddingLeft="4dp"
+        android:paddingTop="20dp"
+        android:ems="4"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Nombre: "/>
+
+    <EditText
+        android:id="@+id/et_nombre2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:hint="@string/hint_nombre"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/et_id"
+        android:layout_toRightOf="@+id/tv_id"/>
+
+    <Button
+        android:id="@+id/btn_alta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_nombre2"
+        android:onClick="alta"
+        android:text="ALTA"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <Button
+        android:id="@+id/btn_lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_alta"
+        android:onClick="lista"
+        android:text="LISTA"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:id="@+id/tv_lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_lista">
+
+    </TextView>
+
+</RelativeLayout>

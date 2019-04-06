@@ -1,7 +1,7 @@
-#Tue Apr 02 10:04:13 CST 2019
-base.0=/home/durazno/AndroidStudioProjects/MobileDevices/SharedPreferences/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
+#Wed Apr 03 22:38:08 CST 2019
+base.0=/home/durazno/AndroidStudioProjects/backup/MobileDevices/SharedPreferences/app/build/intermediates/dex/debug/mergeExtDexDebug/out
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/home/durazno/AndroidStudioProjects/MobileDevices/SharedPreferences/app/build/intermediates/dex/debug/mergeExtDexDebug/out
+base.1=/home/durazno/AndroidStudioProjects/backup/MobileDevices/SharedPreferences/app/build/intermediates/dex/debug/mergeProjectDexDebug/out

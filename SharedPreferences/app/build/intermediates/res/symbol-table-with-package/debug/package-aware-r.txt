@@ -678,6 +678,8 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btn_alta
+id btn_lista
 id buttonPanel
 id center
 id center_horizontal
@@ -699,9 +701,11 @@ id direct
 id disableHome
 id edit_query
 id end
+id et_id
 id et_lastname
 id et_name
 id et_nombre
+id et_nombre2
 id et_x
 id et_y
 id expand_activities_button
@@ -791,6 +795,9 @@ id title_template
 id top
 id topPanel
 id tv_display
+id tv_id
+id tv_lista
+id tv_nombre
 id uniform
 id up
 id useLogo
@@ -835,6 +842,7 @@ layout activity_ejercicio2
 layout activity_ejercicio2_a
 layout activity_ejercicio3
 layout activity_ejercicio3_a
+layout activity_ejercicio4
 layout activity_main
 layout notification_action
 layout notification_action_tombstone
@@ -891,6 +899,8 @@ string app_name
 string etName
 string etx
 string ety
+string hint_id
+string hint_nombre
 string pref_key_img
 string pref_key_lastname
 string pref_key_name

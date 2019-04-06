@@ -26,6 +26,6 @@ public class MyCanvas extends View {
         Rect rect = canvas.getClipBounds();
         Bitmap bm = Bitmap.createScaledBitmap(bitMap, rect.width(), rect.height(), true);
 
-        canvas.drawBitmap(bm , 0, 0, paint);
+        canvas.drawBitmap(bm, 0, 0, paint);
     }
 }

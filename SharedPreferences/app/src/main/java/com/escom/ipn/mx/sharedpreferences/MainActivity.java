@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Ejercicio3Activity.class);
         startActivity(intent);
     }
+
+    public void databases(View view){
+        Intent intent = new Intent(this, Ejercicio4Activity.class);
+        startActivity(intent);
+    }
 }
