@@ -1,4 +1,0 @@
-#Fri Mar 29 09:54:54 CST 2019
-base.0=/home/durazno/Documents/ADMD/Proyectos/2doParcial/Proyecto-Recuperacion/Codigo/App/DeviceList/app/build/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex

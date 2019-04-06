@@ -1,7 +1,0 @@
-#Tue Apr 02 11:39:21 CST 2019
-base.0=/home/durazno/AndroidStudioProjects/MobileDevices/EasyPav/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
-path.1=classes.dex
-renamed.1=classes2.dex
-path.0=classes.dex
-renamed.0=classes.dex
-base.1=/home/durazno/AndroidStudioProjects/MobileDevices/EasyPav/app/build/intermediates/dex/debug/mergeExtDexDebug/out
