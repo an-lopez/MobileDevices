@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WebViewExample</string>
+    <string name="back">BACK</string>
+    <string name="home">HOME</string>
+    <string name="forward">FORWARD</string>
+    <string name="go">GO</string>
+    <string name="url">URL: </string>
+    <string name="hint_url">i.e. wwww.google.com</string>
+</resources>
