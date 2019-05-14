@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_matriza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Matriz A: "/>
+
+    <EditText
+        android:id="@+id/A1"
+        android:layout_width="50dp"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_matriza"/>
+
+    <TextView
+        android:id="@+id/x1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="X"
+        android:paddingTop="5dp"
+        android:layout_toRightOf="@+id/A1"/>
+
+    <EditText
+        android:id="@+id/A2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/x1"/>
+
+    <TextView
+        android:id="@+id/tv_matrizb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_below="@id/tv_matriza"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Matriz B: "/>
+
+    <EditText
+        android:id="@+id/B1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/A1"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/tv_matrizb"/>
+
+    <TextView
+        android:id="@+id/x2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="X"
+        android:paddingTop="20dp"
+        android:layout_below="@id/x1"
+        android:layout_toRightOf="@+id/A1"/>
+
+    <EditText
+        android:id="@+id/B2"
+        android:layout_width="50dp"
+        android:layout_below="@id/A2"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/x1"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_matrizb"
+        android:onClick="checkMatriz"
+        android:text="Continue"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+
+
+</RelativeLayout>

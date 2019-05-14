@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Camera2Activity">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tomar una vista previa"/>
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tomar una imagen completa"/>
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar una foto de la galeria"/>
+
+    </RadioGroup>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+
+        android:text="Tomar foto"/>
+
+    <ImageView
+        android:id="@+id/iv_mostrar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

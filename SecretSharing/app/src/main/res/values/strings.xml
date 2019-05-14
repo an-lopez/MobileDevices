@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Secret Sharing</string>
+    <string name="hint_email">example@domain.com</string>
+    <string name="hint_password">password</string>
+    <string name="mail">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="createAccount">Create Account</string>
+    <string name="newAccount">No account yet?</string>
+    <string name="newAccount2">Create one</string>
+
+    <string name="fingerTitle">Sign in</string>
+    <string name="fingerDescription">Now you can sign in to your account using your fingerprint instead of u</string>
+    <string name="fingerButton">Cancel</string>
+    <string name="fingerHint">Touch the fingerprint sensor</string>
+
+</resources>
